@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/img.jpg");
+    background-size: cover;
+}
+.container{
+    width: 400px !important;
+    height: 450px;
+    margin-left: 50px !important;
+    margin-top: 100px;
+    background-color: transparent;
+    border: 1px solid #0000 !important;
+    border-radius: 10px;
+    box-shadow: -5px 5px 30px #fff;
+}
+
