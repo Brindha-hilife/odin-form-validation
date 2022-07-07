@@ -11,57 +11,87 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
     <title>Form Validation</title>
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <form action="" method="">
+        <div class="item1">
+            <div class="content-left">
                 <div class="row">
-                    <div class="col-md-6 text-start">
-                        <label for="Firstname">Firstname</label>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
-                            <input type="text" class="form-control" placeholder="Firstname" aria-label="Firstname" aria-describedby="basic-addon1">
+                    <P class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</P>
+                </div>
+                <div class="row">
+                    <form action="" onsubmit="return validateform()">
+                        <div class="row">
+                            <div class="col-md-6 text-start mb-3">
+                                <label for="Firstname">First Name</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    <input type="text" class="form-control" placeholder="First Name" id="firstname" required>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 text-start">
+                                <label for="Lastname">Last Name</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    <input type="text" class="form-control" placeholder="Last Name" id="lastname" required>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 text-start">
-                        <label for="Lastname">Lastname</label>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
-                            <input type="text" class="form-control" placeholder="Lastname" aria-label="Lastname" aria-describedby="basic-addon1">
+                        <div class="row">
+                            <label for="Email">Email</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                <input type="text" class="form-control" placeholder="Email" id="email" required>
+                            </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <label for="Phone Number">Phone Number</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                <input type="number" class="form-control" placeholder="Phone Number" id="phonenumber" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6 text-start">
+                                <label for="Password">Password</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                    <input type="text" class="form-control" placeholder="Password" id="password">
+                                </div>
+                                <p id="err1"></p>
+                            </div>
+                            <div class="col-md-6 text-start">
+                                <label for="Confirm">Confirm</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                    <input type="text" class="form-control" placeholder="Confirm" id="confirm">
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="row mb-3">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-6">
+                                <button type="submit" value="Create Account"class="btn btn-primary">Create Account</button>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                        <div class="row">
+                            <p class="para">Already have an account? <a href="">Log in</a></p>
+                        </div>
+                    </form>  
                 </div>
-                <div class="row">
-                    <label for="Email">Email</label>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"></i></span>
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
-                    </div>
-                </div>
-                <div class="row">
-                    <label for="Password">Password</label>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i></span>
-                        <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
-                    </div>
-                    <label for="Confirm">Confirm</label>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i></span>
-                        <input type="text" class="form-control" placeholder="Confirm" aria-label="Confirm" aria-describedby="basic-addon1">
-                    </div>
-                </div> 
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-6">
-                        <button type="submit" value="Create Account"class="btn btn-primary">Create Account</button>
-                    </div>
-                    <div class="col-md-3"></div>
-                </div>
-            </form>  
+            </div>
         </div>
+        <div class="item2">
+            <div class="content-right">
+                <img src="assets/css/images/img3.jpg" alt="">
+            </div>
+        </div>
+        <script src="assets/js/main.js"></script>
     </div>
-    
 </body>
 </html>
