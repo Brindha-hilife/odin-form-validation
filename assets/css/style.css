@@ -98,8 +98,7 @@ a{
     width: 350px;
     display: inline;
     background-color: #1c0a00 !important;
-    /* opacity: 1; */
-    /* z-index: 100; */
+    opacity: 0.5;
     margin-left: -350px;
 }
 .image{
