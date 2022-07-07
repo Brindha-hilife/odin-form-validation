@@ -1,3 +1,5 @@
+// form validation
+
 function validateform(){
     var pass = document.getElementById('password');
     var con = document.getElementById('confirm');
@@ -16,11 +18,13 @@ function validateform(){
         con.style.border = "2px solid red";
         error.style.color = "red";
         return false;
-    }else {
+    }else if(password === confirm){
         error.textContent = "Valid";
         pass.style.border = "2px solid green";
         con.style.border = "2px solid green";
         error.style.color = "green";
         return false;
     }
+
 }
+

@@ -23,7 +23,7 @@
                         sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</P>
                 </div>
                 <div class="row">
-                    <form action="" onsubmit="return validateform()">
+                    <form action="" >
                         <div class="row">
                             <div class="col-md-6 text-start mb-3">
                                 <label for="Firstname">First Name</label>
@@ -42,20 +42,22 @@
                             </div>
                         </div>
                         <div class="row">
-                            <label for="Email">Email</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                                <input type="text" class="form-control" placeholder="Email" id="email" required>
+                            <div class="col-md-6 text-start">
+                                <label for="Email">Email</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                    <input type="text" class="form-control" placeholder="Email" id="email" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-start">
+                                <label for="Phone Number">Phone Number</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                    <input type="number" class="form-control" placeholder="Phone Number" id="phonenumber" required>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
-                            <label for="Phone Number">Phone Number</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text"><i class="fas fa-phone"></i></span>
-                                <input type="number" class="form-control" placeholder="Phone Number" id="phonenumber" required>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
                             <div class="col-md-6 text-start">
                                 <label for="Password">Password</label>
                                 <div class="input-group mb-3">
@@ -71,24 +73,39 @@
                                     <input type="text" class="form-control" placeholder="Confirm" id="confirm">
                                 </div>
                             </div>
-                        </div> 
-                        <div class="row mb-3">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-6">
-                                <button type="submit" value="Create Account"class="btn btn-primary">Create Account</button>
-                            </div>
-                            <div class="col-md-3"></div>
-                        </div>
-                        <div class="row">
-                            <p class="para">Already have an account? <a href="">Log in</a></p>
                         </div>
                     </form>  
+                </div><br>
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <button type="submit" value="Create Account" class="btn btn-primary" onclick="validateform()">Create Account</button>
+                    </div>
+                    <div class="col-md-6"></div>
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="row">
+                    <p class="para">Already have an account? <a href="">Log in</a></p>
                 </div>
             </div>
         </div>
         <div class="item2">
             <div class="content-right">
                 <img src="assets/css/images/img3.jpg" alt="">
+                <div class="container-one">
+                    <div class="row">
+                        <div class="col-md-1">
+                            
+                           
+                        </div>
+                        <div class="col-md-4">
+                            <img src="assets/css/images/logo.png" class="image" alt="" >
+                        </div>
+                        <div class="col-md-2">
+                            <p class="paraone">HILIFE.AI</p>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
         <script src="assets/js/main.js"></script>
